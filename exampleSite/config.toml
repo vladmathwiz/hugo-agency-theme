@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-us"
-title = "Hugo Agency Theme"
+title = "tera insights"
 theme = "hugo-agency-theme"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
@@ -17,8 +17,8 @@ googleAnalytics = ""
 
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-	name = "Your name"
-	description = "Your description"
+	name = "Alin Dobra"
+	description = "CEO of Tera Insights. Secure file transfers. Cool."
 
 	# Since this template is static, the contact form uses www.formspree.io as a
 	# proxy. The form makes a POST request to their servers to send the actual
@@ -31,12 +31,12 @@ googleAnalytics = ""
     # - send a dummy email yourself to confirm your account
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
-	email = "your@email.com"
+	email = "vladmathwiz@gmail.com"
 
 
 	# Navigation
 	[params.navigation]
-		brand = "The Agency"
+		brand = "tera insights"
 		services = "Services"
 		portfolio = "Portfolio"
 		about = "About"
@@ -56,7 +56,7 @@ googleAnalytics = ""
     # postpended links
     [[menu.postpend]]
         url = "http://gohugo.io"
-        name = "External link"
+        name = ""
         weight = 10
 
 
@@ -64,37 +64,34 @@ googleAnalytics = ""
 	[params.hero]
 		# To change the background image of the hero, replace 'header-bg.jpg' in
 		# the 'static/img' folder.
-		title = "Welcome To Our Studio!"
-		subtitle = "It's nice to meet you"
+		title = "tera insights"
+		subtitle = "Take control of your data&trade;"
 		buttonText = "Tell me more"
 
 
 	# Services section
 	[params.services]
         enable = true
-		title = "Services"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
+		title = "Products"
+		subtitle = ""
 
         [[params.services.row]]
 
             [[params.services.row.list]]
-                icon = "fa-shopping-cart"
-                title = "E-Commerce"
+                icon = "ticrypt.svg"
+                title = "tiCrypt"
                 description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+                link = "www.ticrypt.com/"
 
             [[params.services.row.list]]
-                icon = "fa-laptop"
-                title = "Responsive Design"
+                icon = "grokit.svg"
+                title = "tiGrokit"
                 description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-
-            [[params.services.row.list]]
-                icon = "fa-lock"
-                title = "Web"
-                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+                link = "www.tigrokit.com/"
 
 	# Portfolio section
 	[params.portfolio]
-        enable = true
+        enable = false
 		# All projects defined in their own files. You can find example projects
 		# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
 		# at the root of this Hugo site.
@@ -111,7 +108,7 @@ googleAnalytics = ""
 
     # About section
 	[params.about]
-        enable = true
+        enable = false
 		title = "About"
 		subtitle = "Lorem ipsum dolor sit amet consectetur."
 		endpoint = "Be part<br>of our<br>story!"
@@ -154,38 +151,19 @@ googleAnalytics = ""
 		# All team member's pictures are stored under 'static/img/team'.
 		# Replace them with your own too.
 		[[params.team.members]]
-			img = "1.jpg"
-			name = "Kay Garland"
-			position = "Lead Designer"
-			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
-			]
+			img = "alin.jpg"
+			name = "Alin Dobra"
+			position = ""
+
 
 		[[params.team.members]]
-			img = "2.jpg"
-			name = "Larry Parker"
-			position = "Lead Marketer"
-			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
-			]
-
-		[[params.team.members]]
-			img = "3.jpg"
-			name = "Diana Pertersen"
-			position = "Lead Developer"
-			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
-			]
+			img = "chris.jpg"
+			name = "Chris Dudley"
+			position = ""
 
 	# Client section
     [params.clients_list]
-        enable = true
+        enable = false
 
     	# All the clients' logos are stored under 'static/img/logos'.
     	# Replace them with your clients's logos.
@@ -234,24 +212,3 @@ googleAnalytics = ""
 	# Footer section
 	[params.footer]
         enable = true
-		copyright = "Published under the Apache License 2.0."
-
-		[[params.footer.social]]
-			icon = "fa-twitter"
-			link = "#"
-
-		[[params.footer.social]]
-			icon = "fa-facebook"
-			link = "#"
-
-		[[params.footer.social]]
-			icon = "fa-linkedin"
-			link = "#"
-
-		[[params.footer.quicklinks]]
-			text = "Privacy Policy"
-			link = "#"
-
-		[[params.footer.quicklinks]]
-			text = "Terms of Use"
-			link = "#"
